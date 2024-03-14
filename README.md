@@ -20,6 +20,7 @@ console.log(`A subtração dos números é ${numero1 - numero2}`);
 console.log(`A multiplicação dos números é ${numero1 * numero2}`);
 console.log(`A divisão dos números é ${numero1 / numero2}`);
 console.log(`O resto da divisão dos números é ${numero1 % numero2}`);
+console.log(`O número elevado à potência do outro é ${numero1 ** numero2}`);
 ~~~
 
 Em cada uma das operações, temos um operador aritmético:
@@ -29,6 +30,7 @@ Em cada uma das operações, temos um operador aritmético:
 * `*` -> multiplicação
 * `/` -> divisão
 * `%` -> resto da divisão
+* `**` -> potenciação
 
 ## operadores-atribuicao.js
 
@@ -52,12 +54,14 @@ console.log(`Decrementando o número em 1: ${-- numero}`);
 console.log(`O número final é igual a ${numero}`);
 ~~~
 
-Operadores de atribuição:
+### Operadores de atribuição:
 
+* `=` -> atribuição de um valor à variável
 * `+=` -> atribuição com soma
 * `-=` -> atribuição com subtração
 * `*=` -> atribuição com multiplicação
 * `/=` -> atribuição com divisão
+* `**=` -> atribuição com potenciação
 * `%=` -> atribuição com resto da divisão 
 * `++` -> atribuição com **incremento 1** (pode ser *pré* ou *pós* incrementado). Ex: `numero++` (pós-incremento) ou `++numero` (pré-incremento).
 * `--` -> atribuição com **decremento 1** (pode ser *pré* ou *pós* decrementado). Ex: `numero--` (pós-decremento) ou `--numero` (pré-decremento).
