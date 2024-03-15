@@ -121,6 +121,8 @@ Orientações:
 * Utilize a fórmula **IMC = peso / altura²** para calcular o IMC.
 * Utilize a estrutura **if-else** para classificar o IMC de acordo com a tabela da OMS:
 
+IMC | Indicação
+----- | -----
 Abaixo de 18,5	| Abaixo do peso
 18,5 - 24,9	| Peso normal
 25,0 - 29,9	| Sobrepeso
