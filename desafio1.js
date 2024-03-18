@@ -18,7 +18,8 @@ if (mediaFinal >= 7) {
   console.log(
     `O aluno: ${nomeAluno}. Foi aprovado com média final de: ${mediaFinal.toFixed(2)}`
   );
-} else if (mediaFinal >= 5 && mediaFinal <= 6) {
+// Se a media não é maior ou igual a 7, então obrigatoriamente será menor que sete, não sendo preciso testar esta condição. Isso elimina a necessidade de utilizarmos operadores lógicos em condicionais simples.
+} else if (mediaFinal >= 5) { // não precisamos testar se é < 7
   //saída de dados
   console.log(
     `O aluno: ${nomeAluno}. Esta de recuperação com média final de: ${mediaFinal.toFixed(2)}`
