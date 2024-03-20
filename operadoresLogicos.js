@@ -10,8 +10,6 @@ if (email == 'Guilherme' || senha == 123456) {
     console.log("login reprovado");
 }
 
-
-
 //exemplo final
 
 const identidade = true
