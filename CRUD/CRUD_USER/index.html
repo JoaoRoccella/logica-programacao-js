@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Guilherme Amorim" />
+    <title>Sistema CRUD</title>
+  </head>
+  <body>
+    <script>
+      //CRIAR SISTEMA DE GERENCIAMENTO DE USUÁRIO
+
+      let arrUsers = [];
+
+      function showMenu() {
+        parseInt(
+          prompt(`
+                *****Menu*****
+                [1] - Cadastrar usuário
+                [2] - Listar usuário(s)
+                [3] - Atualizar usuário
+                [4] - Deletar usuário
+                [5] - Sair do programa
+            `)
+        );
+      }
+
+      //Método de cadastro de usuário => (Verbo HTTP: POST)
+      const AddUser = () => {
+        const nameUser = prompt("Informe o nome da pessoa:");
+        const emailUser = prompt("Informe o email da pessoa:");
+
+        if (!nameUser || !emailUser) {
+          alert("Os campos são obrigatórios! ");
+        }
+
+        // E OU -> Lógicos (&&, ||, !)
+
+        arrUsers.push({ nameUser, emailUser });
+
+        console.log(arrUsers);
+      };
+
+      AddUser();
+
+      //Método de listagem de usuário => (Verbo HTTP: GET)
+      const ListUser = () => {
+
+        let listUser = '';
+
+        arrUsers.forEach((dataUser) => {
+          listUser +=  ` 
+          Nome: ${dataUser.nameUser}, Email: ${dataUser.emailUser}`
+        });
+
+        console.log(listUser);
+
+        alert("*****Lista de usuários*****" + listUser);
+      };
+
+      ListUser();
+
+      //Método de Atualizar => (Verbo HTTP: PUT)
+      function UpdateUserInfo() {
+        const findEmail = prompt("Informe o email que você deseja atualizar!")
+        const usuarioEncontrado = arrUsers.find(user => user.emailUser === findEmail)
+
+        if (!usuarioEncontrado) {
+            alert("Usuário não foi encontrado!")
+
+            return;
+        }
+
+        usuarioEncontrado.nameUser = variavelNova
+        usuarioEncontrado.emailUser = variavelNovaEmail
+       
+      }
+
+      UpdateUserInfo();
+
+    </script>
+  </body>
+</html>
