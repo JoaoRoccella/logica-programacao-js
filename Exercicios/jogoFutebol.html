@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Terefa futebol</title>
+  </head>
+  <body>
+    <script>
+      // Desenvolva um programa que recebe do usuário, o placar de um jogo de futebol (os gols de cada time) e informa se o resultado foi um empate, se a vitória foi do primeiro time ou do segundo time.
+
+      //entrada de dados
+      // = informar os dois times de futebol
+      // = informar o placar do jogo
+      const nomeTime01 = prompt("Informe o nome do time 01:");
+      const placarTime01 = prompt(`Informe o placar do time: ${nomeTime01}`);
+
+      const nomeTime02 = prompt("Informe o nome do time 02:");
+      const placarTime02 = prompt(`Informe o placar do time: ${nomeTime02}`);
+
+      //processamento
+      // = realizar a validação através das estruturas condicionais (if-else)
+      // = verificar se os times ganharam, perderam ou empataram
+      if (placarTime01 > placarTime02) {
+        alert(
+             //saida
+      // = informar o resultado do jogo de futebol
+          `O time ${nomeTime01} ganhou do time ${nomeTime02}. Por um placar de ${placarTime01} x ${placarTime02}`
+        );
+      } else if (placarTime01 < placarTime02) {
+        alert(
+             //saida
+      // = informar o resultado do jogo de futebol
+          `O time ${nomeTime02} ganhou do time ${nomeTime01}. Por um placar de ${placarTime02} x ${placarTime01}`
+        );
+      } else {
+         //saida
+      // = informar o resultado do jogo de futebol
+        alert(`O time ${nomeTime02} empatou com o ${nomeTime01}. Por um placar de ${placarTime02} x ${placarTime01}`)
+      }
+
+     
+    </script>
+  </body>
+</html>
